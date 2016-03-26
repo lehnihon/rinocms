@@ -12,7 +12,9 @@
 	},
 	"require": {
 		"php": ">=5.2.4",
-		"vindi/vindi-php": "dev-master"
+		"vindi/vindi-php": "dev-master",
+		"twbs/bootstrap": "dev-master",
+		"components/jquery": "dev-master"
 	},
 	"suggest": {
 		"paragonie/random_compat": "Provides better randomness in PHP 5.x"
