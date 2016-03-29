@@ -11,13 +11,14 @@ class Login extends CI_Controller {
 		$this->load->view('template_parts/footer',$data);			
 	}
 
-	public function insert(){
+	public function verifica(){
 		$data['title'] = 'teste';
 
-        $this->form_validation->set_rules('login', 'Username', 'required');
+        $this->form_validation->set_rules('login', 'Username', 'required',
+        	array('required' => 'Entre com um usuário válido'));
         $this->form_validation->set_rules('senha', 'Password', 'required',
-                array('required' => 'You must provide a %s.')
-        );
+            array('required' => 'Entre com uma senha válida.'));
+        
 		if ($this->form_validation->run() == FALSE){
 			$this->load->view('template_parts/header',$data);
 			$this->load->view('login/index',$data);

@@ -3,7 +3,7 @@
 		<div class="col-md-12">
 			<?php  echo validation_errors(); ?>
 
-			<?php echo form_open('login/insert'); ?>
+			<?php echo form_open(base_url('login/verifica')); ?>
 			<p>
 				<label for="login">Login</label>
 				<input type="text" name="login"/>
