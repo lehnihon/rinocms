@@ -3,10 +3,10 @@
 		<div class="col-md-12">
 			<?php  echo validation_errors(); ?>
 
-			<?php echo form_open(base_url('login/verifica')); ?>
+			<?php echo form_open(base_url('usuario/verifica')); ?>
 			<p>
-				<label for="login">Login</label>
-				<input type="text" name="login"/>
+				<label for="usuario">Login</label>
+				<input type="text" name="usuario"/>
 			</p>
 			<p>
 				<label for="senha">Senha</label>
