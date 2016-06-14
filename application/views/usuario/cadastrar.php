@@ -5,7 +5,7 @@
 				<p><?php echo $erro; ?></p>
 				<?php  echo validation_errors(); ?>
 			</div>
-			<?php echo form_open(base_url('usuario/verifica')); ?>
+			<?php echo form_open(base_url('usuario/cadastrar')); ?>
 			<p>
 				<label for="login">Login</label>
 				<input type="text" name="login"/>
@@ -15,7 +15,7 @@
 				<input type="text" name="senha"/>
 			</p>
 			<p>
-				<input type="submit" name="enviar" value="Logar"/>
+				<input type="submit" name="cadastrar" value="Cadastrar"/>
 			</p>
 		</div>
 	</div>	

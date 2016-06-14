@@ -14,7 +14,14 @@ class Usuario_model extends CI_Model {
 	}
 
 	public function valida($login,$senha){
-
+        $sql = "SELECT * FROM usuario WHERE login = ? AND senha = ?";
+        $query = $this->db->query($sql, array($login, $senha));
+        $row = $query->row();
+        if($row){
+            return true;
+        }else{
+            return false;
+        }
 	}
 
     /**
